@@ -51,6 +51,7 @@ func main() {
 }
 
 func sendEmail(user *pb.User) error {
+	// stub function - only prints to console for now
 	log.Println("Sending email to:", user.Name)
 	return nil
 }

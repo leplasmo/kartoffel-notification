@@ -1,4 +1,14 @@
 # kartoffel-notification/Makefile
+build:
+	docker build -t \
+	kartoffel-notification \
+	.
+	
+run-nats:
+	docker run -d --rm \
+	--name nats \
+	-p 4222:4222 \
+	nats
 
 run-bg:
 	docker run -d --rm \
